@@ -636,3 +636,17 @@ of very large configurations
 # terraform plan -refresh=false -target=aws_security_group.allow_ssh_conn
 
  
+***** Zipmap function
+The zipmap function constructs a map from a list of keys and
+a corresponding list of values.
+
+List of keys + list of values
+
+example:
+zipmap(["pinapple","oranges","strawberry"], ["yellow","orange","red"])
+
+Simple use-case:
+- You are creating multiple IAM users
+- You need output which contains direct mapping of IAM names
+and ARNs
+
